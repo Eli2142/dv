@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+  color: #fff;
+}
+.row{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+h1{
+	margin-left: 20px;
+}
+.container-fluid{
+	text-align: center;
+}
+
+body {
+  background-color: lightgreen;
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.nav2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  background: green;
+  height: 200px;
+}         
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-size: 100px;
+}
+
+.success {background-color:green;} /* Green */
+.success:hover {background-color: lightgreen;}
+
+.warning {background-color: green;} /* Orange */
+.warning:hover {background: lightgreen;}
+
+.danger {background-color: green;} /* Red */ 
+.danger:hover {background: lightgreen;}
+
+.default {background-color: green;} /* Gray */ 
+.default:hover {background: lightgreen;}
+
+p{
+  text-align: center;
+}
+audio{
+  position: absolute;
+  margin-top: 1949px;
+}
+
+h2{
+  border-bottom: 4px solid green;
+}
+li{
+  list-style-type: none;
+}
+a:visited{
+  color: white;
+}
+.a:visited{
+  color: blue;
+}
+a:active{
+  color: black;
+}
+.a:hover{
+  color: greenfcvghvhvghhb ;
+}
+.nav{
+  margin: 0px;
+}
+.container1{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+
+.flex-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: rgba(127, 219, 255, .3);
+  height: 100px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+i {
+  margin: 0 30px;
+  font-size: 35px;
+  color: #001f3f;
+  position: relative;
+}
+
+i:after {
+  position: absolute;
+  content: '';
+  height: 60px;
+  width: 60px;
+  background: #001f3f;
+  transform: translate(-45px, -13px);
+  opacity: 0.1;
+  border-radius: 50%;
+  z-index: -1;
+  transition: .3s all;
+}
+
+
+
+i:active:after {
+  transform: translate(-45px, -13px) scale(1);
+}
+
+i:hover {
+  color: white;
+}
+.container-flex{
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.card-description{
+  margin-top: 500px;
+}
+
+.item {
+  display: flex;
+  flex-flow: wrap;
+  min-width: 18%;
+  transition: width 2s, height 2s, background-color 2s, transform 0.3s; 
+  flex: 1;
+  height: 382px;
+  border: 5px solid green;
+}
+.item:hover {
+  transform: scale(1.1, 1.1);
+}
+.title {
+  background-image: url("/images/goku1.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+
+}
+
+.iframe1{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 578px;
+}
+
+.title-1 {
+  background-image: url("/images/super-sayian-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+}
+
+.title-2 {
+  background-image: url("/images/super-sayian-2-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+}
+.title-2 p{
+  margin-top: 50px;
+}
+
+.title-3 {
+  background-image: url("/images/super-sayian-3-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+}
+
+.title-4 {
+  background-image: url("/images/super-sayian-4-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+
+}
+.title-5 {
+  background-image: url("/images/super-sayian-god-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+}
+
+.title-6 {
+  background-image: url("/images/super-sayian-blue-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 500px;
+
+}
+
+.title-7 {
+  background-image: url("/images/ultra-instinct-goku.gif");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 600px;
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.threelines{
+  display: none; 
+  margin-left: 346px;
+  
+ 
+}                                        
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav3{
+  background: green;
+  height: 60px;
+}
+/*Desktop*/
+@media (max-width: 1800px) {
+  .item {
+    min-width: 33.33%; 
+  }
+  .nav2{
+    height: 200px;
+  }
+  .threelines{
+    display: none;
+    margin-left: 410px;
+  }   
+}
+/*Tablet*/
+@media (max-width: 1400px) {
+  .item {
+    min-width: 50%; 
+  }
+  .nav2{
+    height: 400px;
+  }
+  .threelines{
+    display: none;
+    }   
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+  .item {
+    min-width: 50%;
+  }
+  .nav2{
+    display: none;
+  }
+  .threelines{
+    display: block;
+  }   
+}
+
